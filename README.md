@@ -3,9 +3,9 @@
 [![Platform](https://img.shields.io/badge/Platform-macOS_iOS-blue.svg)](https://developer.apple.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A sophisticated client application for the YarTemp weather service, providing comprehensive atmospheric monitoring across Apple devices.
+A sophisticated client application for the [YarTemp weather service](https://yartemp.com), providing comprehensive atmospheric monitoring across Apple devices.
 
-![scr](https://github.com/user-attachments/assets/5d9c9d56-66ee-4f76-aac9-63feaadac304)
+![scr](https://github.com/user-attachments/assets/f50b0aab-f94c-48cf-870f-755e7bca0bbc)
 
 ## Features
 
