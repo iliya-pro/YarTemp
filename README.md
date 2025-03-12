@@ -25,9 +25,9 @@ A sophisticated client application for the [YarTemp weather service](https://yar
 
 ## Installation
 
-Clone git repository, open `YarTemp.xcodeproj` in Xcode and build.
+Clone Git repository, open `YarTemp.xcodeproj` in Xcode and build.
 
 ### Prerequisites
 - iOS 17.0+ / macOS Ventura 13.0+
 - Apple Developer Account (for development builds)
-- XCode 15.2+
+- Xcode 15.2+
