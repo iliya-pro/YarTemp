@@ -11,10 +11,10 @@ A sophisticated client application for the [YarTemp weather service](https://yar
 
 - **Multi-Platform Support**
   - Native experience for both macOS and iOS
-  - Universal purchase with seamless sync via iCloud
+  - Single project, multiple platforms
 
 - **Advanced Weather Metrics**
-  - Real-time temperature tracking
+  - Temperature tracking
   - Barometric pressure monitoring
 
 - **Widget Ecosystem**
@@ -24,6 +24,8 @@ A sophisticated client application for the [YarTemp weather service](https://yar
   - Dynamic data refresh
 
 ## Installation
+
+Clone git repository, open `YarTemp.xcodeproj` in Xcode and build.
 
 ### Prerequisites
 - iOS 17.0+ / macOS Ventura 13.0+
