@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		326282352BD6D3D800D53619 /* YarTempApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282342BD6D3D800D53619 /* YarTempApp.swift */; };
-		326282372BD6D3D800D53619 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282362BD6D3D800D53619 /* ContentView.swift */; };
-		326282392BD6D3DA00D53619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326282382BD6D3DA00D53619 /* Assets.xcassets */; };
 		3262823D2BD6D3DA00D53619 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3262823C2BD6D3DA00D53619 /* Preview Assets.xcassets */; };
-		326282472BD6D3DA00D53619 /* YarTempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282462BD6D3DA00D53619 /* YarTempTests.swift */; };
 		326282512BD6D3DA00D53619 /* YarTempUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282502BD6D3DA00D53619 /* YarTempUITests.swift */; };
 		326282532BD6D3DA00D53619 /* YarTempUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282522BD6D3DA00D53619 /* YarTempUITestsLaunchTests.swift */; };
+		326282662BD6D40500D53619 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326282652BD6D40500D53619 /* WidgetKit.framework */; };
+		326282682BD6D40500D53619 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326282672BD6D40500D53619 /* SwiftUI.framework */; };
+		3262826B2BD6D40500D53619 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262826A2BD6D40500D53619 /* WidgetBundle.swift */; };
+		3262826D2BD6D40500D53619 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262826C2BD6D40500D53619 /* Widget.swift */; };
+		3262826F2BD6D40700D53619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3262826E2BD6D40700D53619 /* Assets.xcassets */; };
+		326282742BD6D40700D53619 /* WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 326282632BD6D40500D53619 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3262827F2BD6D94400D53619 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827A2BD6D94300D53619 /* Model.swift */; };
+		326282802BD6D94400D53619 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827B2BD6D94300D53619 /* ContentView.swift */; };
+		326282812BD6D94400D53619 /* YarTempApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827C2BD6D94300D53619 /* YarTempApp.swift */; };
+		326282822BD6D94400D53619 /* YarTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827D2BD6D94300D53619 /* YarTempView.swift */; };
+		326282842BD6D98800D53619 /* YarTempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326282832BD6D98800D53619 /* YarTempTests.swift */; };
+		326282852BD6D9B500D53619 /* YarTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827D2BD6D94300D53619 /* YarTempView.swift */; };
+		326282862BD6D9CB00D53619 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827A2BD6D94300D53619 /* Model.swift */; };
+		326282872BD6D9DF00D53619 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827B2BD6D94300D53619 /* ContentView.swift */; };
+		326282892BD6DAD700D53619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326282882BD6DAD700D53619 /* Assets.xcassets */; };
+		3262828A2BD6EDA400D53619 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262827A2BD6D94300D53619 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +43,51 @@
 			remoteGlobalIDString = 326282302BD6D3D800D53619;
 			remoteInfo = YarTemp;
 		};
+		326282722BD6D40700D53619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 326282292BD6D3D800D53619 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 326282622BD6D40500D53619;
+			remoteInfo = WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		326282782BD6D40800D53619 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				326282742BD6D40700D53619 /* WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		326282312BD6D3D800D53619 /* YarTemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YarTemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		326282342BD6D3D800D53619 /* YarTempApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarTempApp.swift; sourceTree = "<group>"; };
-		326282362BD6D3D800D53619 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		326282382BD6D3DA00D53619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3262823A2BD6D3DA00D53619 /* YarTemp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YarTemp.entitlements; sourceTree = "<group>"; };
 		3262823C2BD6D3DA00D53619 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		326282422BD6D3DA00D53619 /* YarTempTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YarTempTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		326282462BD6D3DA00D53619 /* YarTempTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarTempTests.swift; sourceTree = "<group>"; };
 		3262824C2BD6D3DA00D53619 /* YarTempUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YarTempUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326282502BD6D3DA00D53619 /* YarTempUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarTempUITests.swift; sourceTree = "<group>"; };
 		326282522BD6D3DA00D53619 /* YarTempUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarTempUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		326282632BD6D40500D53619 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		326282652BD6D40500D53619 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		326282672BD6D40500D53619 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		3262826A2BD6D40500D53619 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		3262826C2BD6D40500D53619 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		3262826E2BD6D40700D53619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		326282702BD6D40700D53619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326282712BD6D40700D53619 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		3262827A2BD6D94300D53619 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3262827B2BD6D94300D53619 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3262827C2BD6D94300D53619 /* YarTempApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YarTempApp.swift; sourceTree = "<group>"; };
+		3262827D2BD6D94300D53619 /* YarTempView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YarTempView.swift; sourceTree = "<group>"; };
+		326282832BD6D98800D53619 /* YarTempTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YarTempTests.swift; sourceTree = "<group>"; };
+		326282882BD6DAD700D53619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +112,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		326282602BD6D40500D53619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326282682BD6D40500D53619 /* SwiftUI.framework in Frameworks */,
+				326282662BD6D40500D53619 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +130,8 @@
 				326282332BD6D3D800D53619 /* YarTemp */,
 				326282452BD6D3DA00D53619 /* YarTempTests */,
 				3262824F2BD6D3DA00D53619 /* YarTempUITests */,
+				326282692BD6D40500D53619 /* Widget */,
+				326282642BD6D40500D53619 /* Frameworks */,
 				326282322BD6D3D800D53619 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +142,7 @@
 				326282312BD6D3D800D53619 /* YarTemp.app */,
 				326282422BD6D3DA00D53619 /* YarTempTests.xctest */,
 				3262824C2BD6D3DA00D53619 /* YarTempUITests.xctest */,
+				326282632BD6D40500D53619 /* WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,10 +150,12 @@
 		326282332BD6D3D800D53619 /* YarTemp */ = {
 			isa = PBXGroup;
 			children = (
-				326282342BD6D3D800D53619 /* YarTempApp.swift */,
-				326282362BD6D3D800D53619 /* ContentView.swift */,
-				326282382BD6D3DA00D53619 /* Assets.xcassets */,
+				3262827B2BD6D94300D53619 /* ContentView.swift */,
+				3262827A2BD6D94300D53619 /* Model.swift */,
+				3262827C2BD6D94300D53619 /* YarTempApp.swift */,
+				3262827D2BD6D94300D53619 /* YarTempView.swift */,
 				3262823A2BD6D3DA00D53619 /* YarTemp.entitlements */,
+				326282882BD6DAD700D53619 /* Assets.xcassets */,
 				3262823B2BD6D3DA00D53619 /* Preview Content */,
 			);
 			path = YarTemp;
@@ -115,7 +172,7 @@
 		326282452BD6D3DA00D53619 /* YarTempTests */ = {
 			isa = PBXGroup;
 			children = (
-				326282462BD6D3DA00D53619 /* YarTempTests.swift */,
+				326282832BD6D98800D53619 /* YarTempTests.swift */,
 			);
 			path = YarTempTests;
 			sourceTree = "<group>";
@@ -129,6 +186,27 @@
 			path = YarTempUITests;
 			sourceTree = "<group>";
 		};
+		326282642BD6D40500D53619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				326282652BD6D40500D53619 /* WidgetKit.framework */,
+				326282672BD6D40500D53619 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		326282692BD6D40500D53619 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3262826A2BD6D40500D53619 /* WidgetBundle.swift */,
+				3262826C2BD6D40500D53619 /* Widget.swift */,
+				3262826E2BD6D40700D53619 /* Assets.xcassets */,
+				326282702BD6D40700D53619 /* Info.plist */,
+				326282712BD6D40700D53619 /* Widget.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +217,12 @@
 				3262822D2BD6D3D800D53619 /* Sources */,
 				3262822E2BD6D3D800D53619 /* Frameworks */,
 				3262822F2BD6D3D800D53619 /* Resources */,
+				326282782BD6D40800D53619 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				326282732BD6D40700D53619 /* PBXTargetDependency */,
 			);
 			name = YarTemp;
 			productName = YarTemp;
@@ -185,6 +265,23 @@
 			productReference = 3262824C2BD6D3DA00D53619 /* YarTempUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		326282622BD6D40500D53619 /* WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326282752BD6D40800D53619 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildPhases = (
+				3262825F2BD6D40500D53619 /* Sources */,
+				326282602BD6D40500D53619 /* Frameworks */,
+				326282612BD6D40500D53619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtension;
+			productName = WidgetExtension;
+			productReference = 326282632BD6D40500D53619 /* WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,14 +294,19 @@
 				TargetAttributes = {
 					326282302BD6D3D800D53619 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					326282412BD6D3DA00D53619 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 326282302BD6D3D800D53619;
 					};
 					3262824B2BD6D3DA00D53619 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 326282302BD6D3D800D53619;
+					};
+					326282622BD6D40500D53619 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -224,6 +326,7 @@
 				326282302BD6D3D800D53619 /* YarTemp */,
 				326282412BD6D3DA00D53619 /* YarTempTests */,
 				3262824B2BD6D3DA00D53619 /* YarTempUITests */,
+				326282622BD6D40500D53619 /* WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -233,8 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326282892BD6DAD700D53619 /* Assets.xcassets in Resources */,
 				3262823D2BD6D3DA00D53619 /* Preview Assets.xcassets in Resources */,
-				326282392BD6D3DA00D53619 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		326282612BD6D40500D53619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3262826F2BD6D40700D53619 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +370,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326282372BD6D3D800D53619 /* ContentView.swift in Sources */,
-				326282352BD6D3D800D53619 /* YarTempApp.swift in Sources */,
+				3262827F2BD6D94400D53619 /* Model.swift in Sources */,
+				326282812BD6D94400D53619 /* YarTempApp.swift in Sources */,
+				326282802BD6D94400D53619 /* ContentView.swift in Sources */,
+				326282822BD6D94400D53619 /* YarTempView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326282472BD6D3DA00D53619 /* YarTempTests.swift in Sources */,
+				326282842BD6D98800D53619 /* YarTempTests.swift in Sources */,
+				3262828A2BD6EDA400D53619 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +392,18 @@
 			files = (
 				326282512BD6D3DA00D53619 /* YarTempUITests.swift in Sources */,
 				326282532BD6D3DA00D53619 /* YarTempUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3262825F2BD6D40500D53619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3262826B2BD6D40500D53619 /* WidgetBundle.swift in Sources */,
+				326282872BD6D9DF00D53619 /* ContentView.swift in Sources */,
+				326282852BD6D9B500D53619 /* YarTempView.swift in Sources */,
+				3262826D2BD6D40500D53619 /* Widget.swift in Sources */,
+				326282862BD6D9CB00D53619 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +419,11 @@
 			isa = PBXTargetDependency;
 			target = 326282302BD6D3D800D53619 /* YarTemp */;
 			targetProxy = 3262824D2BD6D3DA00D53619 /* PBXContainerItemProxy */;
+		};
+		326282732BD6D40700D53619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 326282622BD6D40500D53619 /* WidgetExtension */;
+			targetProxy = 326282722BD6D40700D53619 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,8 +545,10 @@
 		326282572BD6D3DA00D53619 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = YarTemp/YarTemp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -424,6 +557,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -444,6 +578,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,8 +587,10 @@
 		326282582BD6D3DA00D53619 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = YarTemp/YarTemp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -462,6 +599,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -492,6 +630,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZJ9F7E972T;
@@ -504,6 +643,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YarTemp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YarTemp";
@@ -515,6 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZJ9F7E972T;
@@ -577,6 +718,82 @@
 			};
 			name = Release;
 		};
+		326282762BD6D40800D53619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ9F7E972T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PRO.YarTemp.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		326282772BD6D40800D53619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ9F7E972T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PRO.YarTemp.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -612,6 +829,15 @@
 			buildConfigurations = (
 				3262825D2BD6D3DA00D53619 /* Debug */,
 				3262825E2BD6D3DA00D53619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		326282752BD6D40800D53619 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326282762BD6D40800D53619 /* Debug */,
+				326282772BD6D40800D53619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
