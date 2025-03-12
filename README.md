@@ -25,7 +25,7 @@ A sophisticated client application for the [YarTemp weather service](https://yar
 
 ## Installation
 
-Clone Git repository: `git clone https://github.com/yourusername/YarTemp.git`, then open `YarTemp.xcodeproj` in Xcode and build.
+Clone Git repository: `git clone https://github.com/iliya-pro/YarTemp.git`, then open `YarTemp.xcodeproj` in Xcode and build.
 
 ### Prerequisites
 
