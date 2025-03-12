@@ -9,64 +9,6 @@ import SwiftUI
 
 // MARK: - Header
 
-// MARK: This shape was generated automatically, using https://svg-to-swiftui.quassum.com/
-// Source SVG:
-// <svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-// <path d="M0.5 0H44.5V50H33.6672C25.426 50 18.0285 44.9449 15.0341 37.2669L0.5 0Z" fill="#D9D9D9"/>
-// </svg>
-/*
-struct HeaderPart: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        let width = rect.size.width
-        let height = rect.size.height
-        path.move(to: CGPoint(x: 0.01111*width, y: 0))
-        path.addLine(to: CGPoint(x: 0.98889*width, y: 0))
-        path.addLine(to: CGPoint(x: 0.98889*width, y: height))
-        path.addLine(to: CGPoint(x: 0.74816*width, y: height))
-        path.addCurve(to: CGPoint(x: 0.33409*width, y: 0.74534*height), control1: CGPoint(x: 0.56502*width, y: height), control2: CGPoint(x: 0.40063*width, y: 0.8989*height))
-        path.addLine(to: CGPoint(x: 0.01111*width, y: 0))
-        path.closeSubpath()
-        return path
-    }
-}
-
-@ViewBuilder
-func Header() -> some View {
-    VStack {
-        HStack(spacing: 0) {
-            Spacer()
-            
-            ZStack {
-                HeaderPart()
-                    .fill(Color("HeaderBackground"))
-                    .frame(width: 15, height: 19)
-                // There is a "discrepancy gap", because of floating point calculations, so we need to fill the gap using additional rectangle.
-                Rectangle()
-                    .fill(Color("HeaderBackground"))
-                    .frame(width: 2, height: 19)
-                    .padding(.leading, 13)
-            }
-            
-            Text("YarTemp")
-                .frame(width: 56, height: 19)
-                .textCase(.uppercase)
-                .font(.caption)
-                .foregroundColor(Color("HeaderText"))
-                .padding(.leading, 0)
-                .padding(.trailing, 10)
-                .background(UnevenRoundedRectangle(cornerRadii: .init(
-                    topLeading: 0,
-                    bottomLeading: 0,
-                    bottomTrailing: 0,
-                    topTrailing: 10)).fill(Color("HeaderBackground")))
-        }
-        
-        Spacer()
-    }
-}
-*/
-
 private struct HeaderRadiusKey: EnvironmentKey {
     static let defaultValue: CGFloat = 10
 }
@@ -90,7 +32,6 @@ struct Header: View {
                     .foregroundColor(Color("HeaderText"))
                     .padding(.vertical, 3)
                     .padding(.horizontal, 15)
-                    //.background(ContainerRelativeShape().fill(Color("HeaderBackground")))
                     .background(UnevenRoundedRectangle(cornerRadii: .init(
                         topLeading: 0,
                         bottomLeading: headerRadius,
