@@ -5,8 +5,6 @@
 
 A sophisticated client application for the [YarTemp weather service](https://yartemp.com), providing comprehensive atmospheric monitoring across Apple devices.
 
-![scr](https://github.com/user-attachments/assets/f50b0aab-f94c-48cf-870f-755e7bca0bbc)
-
 ## Features
 
 - **Multi-Platform Support**
